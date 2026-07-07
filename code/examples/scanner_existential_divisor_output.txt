@@ -1,0 +1,219 @@
+  [period-lattice] q=305 ell=17 d=2 predicted points~295.9 cap=20,000,000 coordinate-box outer=37
+  [period-lattice] reduced caps=[18, 9] solve=y0 head states=19
+  [period-lattice] q=305 ell=17 cross-check OK (295 embedding points)
+  [period-square] q=305 ell=17 sorting 295 square keys
+  [period-lattice] q=369 ell=5 d=2 predicted points~660.1 cap=20,000,000 coordinate-box outer=41
+  [period-lattice] reduced caps=[20, 18] solve=y0 head states=37
+  [period-lattice] q=369 ell=5 cross-check OK (659 embedding points)
+  [period-square] q=369 ell=5 sorting 659 square keys
+  [period-lattice] q=369 ell=37 d=2 predicted points~242.7 cap=20,000,000 coordinate-box outer=41
+  [period-lattice] reduced caps=[20, 7] solve=y0 head states=15
+  [period-lattice] q=369 ell=37 cross-check OK (245 embedding points)
+  [period-square] q=369 ell=37 sorting 245 square keys
+  [period-lattice] q=377 ell=7 d=3 predicted points~8,366 cap=20,000,000 coordinate-box outer=1,681
+  [period-lattice] reduced caps=[20, 17, 17] solve=y0 head states=1,225
+  [period-lattice] q=377 ell=7 cross-check OK (8,373 embedding points)
+  [period-square] q=377 ell=7 sorting 8,373 square keys
+  [period-lattice] q=405 ell=29 d=2 predicted points~300.8 cap=20,000,000 coordinate-box outer=43
+  [period-lattice] reduced caps=[21, 8] solve=y0 head states=17
+  [period-lattice] q=405 ell=29 cross-check OK (299 embedding points)
+  [period-square] q=405 ell=29 sorting 299 square keys
+  [period-lattice] q=441 ell=13 d=2 predicted points~489.2 cap=20,000,000 coordinate-box outer=45
+  [period-lattice] reduced caps=[22, 12] solve=y0 head states=25
+  [period-lattice] q=441 ell=13 cross-check OK (489 embedding points)
+  [period-square] q=441 ell=13 sorting 489 square keys
+  [period-lattice] q=441 ell=17 d=4 predicted points~44,394 cap=20,000,000 coordinate-box outer=91,125
+  [period-lattice] reduced caps=[22, 15, 13, 13] solve=y0 head states=22,599
+  [period-lattice] q=441 ell=17 cross-check OK (44,377 embedding points)
+  [period-square] q=441 ell=17 sorting 44,377 square keys
+  [period-lattice] q=493 ell=13 d=2 predicted points~546.9 cap=20,000,000 coordinate-box outer=47
+  [period-lattice] reduced caps=[23, 13] solve=y0 head states=27
+  [period-lattice] q=493 ell=13 cross-check OK (545 embedding points)
+  [period-square] q=493 ell=13 sorting 545 square keys
+  [period-lattice] q=549 ell=5 d=2 predicted points~982.1 cap=20,000,000 coordinate-box outer=49
+  [period-lattice] reduced caps=[24, 21] solve=y0 head states=43
+  [period-lattice] q=549 ell=5 cross-check OK (983 embedding points)
+  [period-square] q=549 ell=5 sorting 983 square keys
+  [period-lattice] q=629 ell=5 d=2 predicted points~1,125 cap=20,000,000 coordinate-box outer=53
+  [period-lattice] reduced caps=[26, 23] solve=y0 head states=47
+  [period-lattice] q=629 ell=5 cross-check OK (1,125 embedding points)
+  [period-square] q=629 ell=5 sorting 1,125 square keys
+  [period-lattice] q=637 ell=29 d=2 predicted points~473.2 cap=20,000,000 coordinate-box outer=53
+  [period-lattice] reduced caps=[26, 10] solve=y0 head states=21
+  [period-lattice] q=637 ell=29 cross-check OK (475 embedding points)
+  [period-square] q=637 ell=29 sorting 475 square keys
+  [period-lattice] q=689 ell=5 d=2 predicted points~1,233 cap=20,000,000 coordinate-box outer=55
+  [period-lattice] reduced caps=[27, 24] solve=y0 head states=49
+  [period-lattice] q=689 ell=5 cross-check OK (1,235 embedding points)
+  [period-square] q=689 ell=5 sorting 1,235 square keys
+  [period-lattice] q=901 ell=41 d=2 predicted points~562.9 cap=20,000,000 coordinate-box outer=63
+  [period-lattice] reduced caps=[31, 10] solve=y0 head states=21
+  [period-lattice] q=901 ell=41 cross-check OK (565 embedding points)
+  [period-square] q=901 ell=41 sorting 565 square keys
+  [period-lattice] q=909 ell=5 d=2 predicted points~1,626 cap=20,000,000 coordinate-box outer=63
+  [period-lattice] reduced caps=[31, 27] solve=y0 head states=55
+  [period-lattice] q=909 ell=5 cross-check OK (1,627 embedding points)
+  [period-square] q=909 ell=5 sorting 1,627 square keys
+  [period-lattice] q=909 ell=13 d=2 predicted points~1,008 cap=20,000,000 coordinate-box outer=63
+  [period-lattice] reduced caps=[31, 17] solve=y0 head states=35
+  [period-lattice] q=909 ell=13 cross-check OK (1,009 embedding points)
+  [period-square] q=909 ell=13 sorting 1,009 square keys
+  [period-lattice] q=949 ell=5 d=2 predicted points~1,698 cap=20,000,000 coordinate-box outer=63
+  [period-lattice] reduced caps=[31, 28] solve=y0 head states=57
+  [period-lattice] q=949 ell=5 cross-check OK (1,699 embedding points)
+  [period-square] q=949 ell=5 sorting 1,699 square keys
+  [period-lattice] q=985 ell=17 d=2 predicted points~955.6 cap=20,000,000 coordinate-box outer=65
+  [period-lattice] reduced caps=[32, 16] solve=y0 head states=33
+  [period-lattice] q=985 ell=17 cross-check OK (957 embedding points)
+  [period-square] q=985 ell=17 sorting 957 square keys
+  [period-lattice] q=985 ell=29 d=2 predicted points~731.6 cap=20,000,000 coordinate-box outer=65
+  [period-lattice] reduced caps=[32, 12] solve=y0 head states=25
+  [period-lattice] q=985 ell=29 cross-check OK (733 embedding points)
+  [period-square] q=985 ell=29 sorting 733 square keys
+  [period-lattice] q=1089 ell=5 d=2 predicted points~1,948 cap=20,000,000 coordinate-box outer=69
+  [period-lattice] reduced caps=[34, 30] solve=y0 head states=61
+  [period-lattice] q=1089 ell=5 cross-check OK (1,951 embedding points)
+  [period-square] q=1089 ell=5 sorting 1,951 square keys
+  [period-lattice] q=1089 ell=109 d=2 predicted points~417.2 cap=20,000,000 coordinate-box outer=69
+  [period-lattice] reduced caps=[34, 7] solve=y0 head states=15
+  [period-lattice] q=1089 ell=109 cross-check OK (421 embedding points)
+  [period-square] q=1089 ell=109 sorting 421 square keys
+  [period-lattice] q=1105 ell=7 d=3 predicted points~41,979 cap=20,000,000 coordinate-box outer=4,761
+  [period-lattice] reduced caps=[34, 29, 29] solve=y0 head states=3,481
+  [period-lattice] q=1105 ell=7 cross-check OK (41,977 embedding points)
+  [period-square] q=1105 ell=7 sorting 41,977 square keys
+  [period-lattice] q=1105 ell=79 d=3 predicted points~3,720 cap=20,000,000 coordinate-box outer=4,761
+  [period-lattice] reduced caps=[34, 8, 8] solve=y0 head states=289
+  [period-lattice] q=1105 ell=79 cross-check OK (3,715 embedding points)
+  [period-square] q=1105 ell=79 sorting 3,715 square keys
+  [period-lattice] q=1165 ell=53 d=2 predicted points~640.1 cap=20,000,000 coordinate-box outer=71
+  [period-lattice] reduced caps=[35, 10] solve=y0 head states=21
+  [period-lattice] q=1165 ell=53 cross-check OK (641 embedding points)
+  [period-square] q=1165 ell=53 sorting 641 square keys
+  [period-lattice] q=1189 ell=5 d=2 predicted points~2,127 cap=20,000,000 coordinate-box outer=71
+  [period-lattice] reduced caps=[35, 31] solve=y0 head states=63
+  [period-lattice] q=1189 ell=5 cross-check OK (2,127 embedding points)
+  [period-square] q=1189 ell=5 sorting 2,127 square keys
+  [period-lattice] q=1189 ell=7 d=3 predicted points~46,856 cap=20,000,000 coordinate-box outer=5,041
+  [period-lattice] reduced caps=[35, 31, 31] solve=y0 head states=3,969
+  [period-lattice] q=1189 ell=7 cross-check OK (46,863 embedding points)
+  [period-square] q=1189 ell=7 sorting 46,863 square keys
+  [period-lattice] q=1189 ell=17 d=2 predicted points~1,153 cap=20,000,000 coordinate-box outer=71
+  [period-lattice] reduced caps=[35, 17] solve=y0 head states=35
+  [period-lattice] q=1189 ell=17 cross-check OK (1,153 embedding points)
+  [period-square] q=1189 ell=17 sorting 1,153 square keys
+  [period-lattice] q=1205 ell=67 d=3 predicted points~4,995 cap=20,000,000 coordinate-box outer=5,041
+  [period-lattice] reduced caps=[35, 10, 10] solve=y0 head states=441
+  [period-lattice] q=1205 ell=67 cross-check OK (4,977 embedding points)
+  [period-square] q=1205 ell=67 sorting 4,977 square keys
+  [period-lattice] q=1313 ell=73 d=2 predicted points~614.7 cap=20,000,000 coordinate-box outer=75
+  [period-lattice] reduced caps=[37, 9] solve=y0 head states=19
+  [period-lattice] q=1313 ell=73 cross-check OK (617 embedding points)
+  [period-square] q=1313 ell=73 sorting 617 square keys
+  [period-lattice] q=1325 ell=17 d=4 predicted points~400,754 cap=20,000,000 coordinate-box outer=421,875
+  [period-lattice] reduced caps=[37, 25, 22, 22] solve=y0 head states=103,275
+  [period-lattice] q=1325 ell=17 cross-check OK (400,753 embedding points)
+  [period-square] q=1325 ell=17 sorting 400,753 square keys
+  [period-lattice] q=1377 ell=13 d=2 predicted points~1,528 cap=20,000,000 coordinate-box outer=77
+  [period-lattice] reduced caps=[38, 21] solve=y0 head states=43
+  [period-lattice] q=1377 ell=13 cross-check OK (1,527 embedding points)
+  [period-square] q=1377 ell=13 sorting 1,527 square keys
+  [period-lattice] q=1377 ell=53 d=2 predicted points~756.6 cap=20,000,000 coordinate-box outer=77
+  [period-lattice] reduced caps=[38, 11] solve=y0 head states=23
+  [period-lattice] q=1377 ell=53 cross-check OK (753 embedding points)
+  [period-square] q=1377 ell=53 sorting 753 square keys
+  [period-lattice] q=1405 ell=37 d=2 predicted points~923.9 cap=20,000,000 coordinate-box outer=77
+  [period-lattice] reduced caps=[38, 13] solve=y0 head states=27
+  [period-lattice] q=1405 ell=37 cross-check OK (923 embedding points)
+  [period-square] q=1405 ell=37 sorting 923 square keys
+  [period-lattice] q=1413 ell=101 d=2 predicted points~562.4 cap=20,000,000 coordinate-box outer=77
+  [period-lattice] reduced caps=[38, 8] solve=y0 head states=17
+  [period-lattice] q=1413 ell=101 cross-check OK (565 embedding points)
+  [period-square] q=1413 ell=101 sorting 565 square keys
+  [period-lattice] q=1469 ell=5 d=2 predicted points~2,628 cap=20,000,000 coordinate-box outer=79
+  [period-lattice] reduced caps=[39, 35] solve=y0 head states=71
+  [period-lattice] q=1469 ell=5 cross-check OK (2,631 embedding points)
+  [period-square] q=1469 ell=5 sorting 2,631 square keys
+  [period-lattice] q=1469 ell=7 d=3 predicted points~64,346 cap=20,000,000 coordinate-box outer=6,241
+  [period-lattice] reduced caps=[39, 34, 34] solve=y0 head states=4,761
+  [period-lattice] q=1469 ell=7 cross-check OK (64,355 embedding points)
+  [period-square] q=1469 ell=7 sorting 64,355 square keys
+  [period-lattice] q=1525 ell=109 d=2 predicted points~584.3 cap=20,000,000 coordinate-box outer=81
+  [period-lattice] reduced caps=[40, 8] solve=y0 head states=17
+  [period-lattice] q=1525 ell=109 cross-check OK (589 embedding points)
+  [period-square] q=1525 ell=109 sorting 589 square keys
+  [period-lattice] q=1565 ell=29 d=2 predicted points~1,162 cap=20,000,000 coordinate-box outer=81
+  [period-lattice] reduced caps=[40, 15] solve=y0 head states=31
+  [period-lattice] q=1565 ell=29 cross-check OK (1,165 embedding points)
+  [period-square] q=1565 ell=29 sorting 1,165 square keys
+  [period-lattice] q=1585 ell=61 d=2 predicted points~811.8 cap=20,000,000 coordinate-box outer=81
+  [period-lattice] reduced caps=[40, 11] solve=y0 head states=23
+  [period-lattice] q=1585 ell=61 cross-check OK (813 embedding points)
+  [period-square] q=1585 ell=61 sorting 813 square keys
+  [period-lattice] q=1629 ell=5 d=2 predicted points~2,914 cap=20,000,000 coordinate-box outer=83
+  [period-lattice] reduced caps=[41, 37] solve=y0 head states=75
+  [period-lattice] q=1629 ell=5 cross-check OK (2,917 embedding points)
+  [period-square] q=1629 ell=5 sorting 2,917 square keys
+  [period-lattice] q=1649 ell=5 d=2 predicted points~2,950 cap=20,000,000 coordinate-box outer=83
+  [period-lattice] reduced caps=[41, 37] solve=y0 head states=75
+  [period-lattice] q=1649 ell=5 cross-check OK (2,949 embedding points)
+  [period-square] q=1649 ell=5 sorting 2,949 square keys
+  [period-lattice] q=1665 ell=17 d=2 predicted points~1,615 cap=20,000,000 coordinate-box outer=83
+  [period-lattice] reduced caps=[41, 20] solve=y0 head states=41
+  [period-lattice] q=1665 ell=17 cross-check OK (1,615 embedding points)
+  [period-square] q=1665 ell=17 sorting 1,615 square keys
+  [period-lattice] q=1745 ell=97 d=2 predicted points~708.7 cap=20,000,000 coordinate-box outer=85
+  [period-lattice] reduced caps=[42, 9] solve=y0 head states=19
+  [period-lattice] q=1745 ell=97 cross-check OK (711 embedding points)
+  [period-square] q=1745 ell=97 sorting 711 square keys
+  [period-lattice] q=1769 ell=5 d=2 predicted points~3,164 cap=20,000,000 coordinate-box outer=87
+  [period-lattice] reduced caps=[43, 38] solve=y0 head states=77
+  [period-lattice] q=1769 ell=5 cross-check OK (3,165 embedding points)
+  [period-square] q=1769 ell=5 sorting 3,165 square keys
+  [period-lattice] q=1885 ell=41 d=4 predicted points~216,554 cap=20,000,000 coordinate-box outer=704,969
+  [period-lattice] reduced caps=[44, 16, 18, 16] solve=y0 head states=40,293
+  [period-lattice] q=1885 ell=41 cross-check OK (216,603 embedding points)
+  [period-square] q=1885 ell=41 sorting 216,603 square keys
+  [period-lattice] q=1961 ell=109 d=2 predicted points~751.3 cap=20,000,000 coordinate-box outer=91
+  [period-lattice] reduced caps=[45, 9] solve=y0 head states=19
+  [period-lattice] q=1961 ell=109 cross-check OK (753 embedding points)
+  [period-square] q=1961 ell=109 sorting 753 square keys
+  [period-lattice] q=1989 ell=5 d=2 predicted points~3,558 cap=20,000,000 coordinate-box outer=91
+  [period-lattice] reduced caps=[45, 40] solve=y0 head states=81
+  [period-lattice] q=1989 ell=5 cross-check OK (3,559 embedding points)
+  [period-square] q=1989 ell=5 sorting 3,559 square keys
+  [period-lattice] q=1989 ell=199 d=3 predicted points~3,566 cap=20,000,000 coordinate-box outer=8,281
+  [period-lattice] reduced caps=[45, 8, 8] solve=y0 head states=289
+  [period-lattice] q=1989 ell=199 cross-check OK (3,581 embedding points)
+  [period-square] q=1989 ell=199 sorting 3,581 square keys
+== Existential divisor theorem scaffold ==
+classification: composite multi-prime q surviving two-squares and self-conjugacy, qmax=2000
+A q is in the first branch only if some proper divisor actually fires by a written quantified criterion, not merely because a matching lane exists.
+
+
+branch counts:
+  has_quantified_firing_divisor: 81
+    first examples: 65, 153, 185, 221, 245, 265, 305, 365, 369, 377
+  has_quantified_full_torus: 29
+    first examples: 85, 145, 205, 225, 325, 445, 481, 565, 585, 697
+  has_projection_gluing_obstruction: 1
+    first examples: 441
+closure mechanisms:
+  scalar_unsat: 45
+  no_side_vector: 19
+  rowsum_unsat: 14
+  h3_support_sum_impossible: 11
+  h3_support_augmentation_impossible: 8
+  component_join_unsat: 5
+  component_unsat: 3
+  no_residue_pair: 3
+  small_h_box_cut: 1
+  linear_projection_unsat: 1
+  h3_support_paf_unsat: 1
+
+next theorem obligation:
+  prove from M(q) that every q enters has_quantified_firing_divisor
+  or has_quantified_full_torus, or replace the remaining named
+  branches by sharper firing/gluing criteria.  The proof must
+  quantify over all divisors t'|t, not over the shape-ranked
+  best_signature() divisor.

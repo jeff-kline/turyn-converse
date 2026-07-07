@@ -1,0 +1,9 @@
+field: Q(sqrt(-2593)),  disc D = -10372 = -4 * 2593
+2593 prime?   1
+31153 prime?  1   (an F_3 / k_3(i) fold prime for q=62305)
+h(D)            = 24     (paper/audit: 24)
+Cl(D) structure = [24]
+kronecker(D,17) = 1   (+1 => 17 splits)
+kronecker(D, 5) = -1   (-1 =>  5 inert)
+kronecker(D,61) = -1   (-1 => 61 inert)
+ord([P_17]) in Cl(D) = 12   (paper/audit: 12)
