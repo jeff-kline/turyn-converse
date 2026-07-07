@@ -18,6 +18,59 @@ Each audit is expected to append an entry; do not rewrite past entries.
 
 ---
 
+## 2026-07-07 — Public-readiness & full-coverage review (Sonnet-orchestrated); fixes applied
+
+**Models.** Sonnet 5 orchestrator; Haiku 4.5 mechanical; Opus 4.8 (high) deep
+proof/coverage tier; Fable reserved (unused). Full report: private Claude Artifact
+([private session link removed]). Mainline
+verification of every proposed fix + application: **Opus 4.8** (`claude-opus-4-8`).
+
+**Scope / verdict.** Full-coverage (129/129 environments, coverage ledger) +
+self-containment + public-share readiness. Reported: 95/101 claim-bearing SOUND,
+0 GAP, 0 OVERCLAIM, 2 disclosed UNVERIFIED (GRH class groups q=5185/62305; imported
+sieve constants in `prop:small-factor-sieve`). Verdict GO-WITH-FIXES.
+
+**Mainline verify-before-apply of the 7 proposed fixes.**
+- **Fix 2 (APPLIED)** — label `conj:Lstar`→`prop:Lstar` (a proposition mislabeled with
+  a `conj:` prefix); the single `\ref` updated; mirrored capstone↔companion. Verified:
+  exactly 4 occurrences repo-wide, none in problems/STATUS.
+- **Fix 3 (APPLIED — real math typo)** — in the `prop:pe-full-unit-nested` proof,
+  numerator `\varphi(p^e)`→`\varphi(p^{e-j})` (capstone.tex:1815). Verified THREE ways:
+  the orbit `O_j=p^j(\Z/p^{e-j})^\times` has size `\varphi(p^{e-j})` (stmt line 1791);
+  the λ-formula weights `O_j` by `\varphi(p^{e-j})` (line 1796); and boundary
+  consistency at m=j (with `\varphi(p^e)` the two case-formulas disagree, with the fix
+  they agree). Distinct from the `y_{-1}:=0` typo fixed in a prior round. Mirrored.
+- **Fix 4 (APPLIED)** — dead labels on the `C_{49}` corollary: renamed
+  `prop:c49-nested`→`cor:c49-nested` (prefix fix) and removed the redundant trailing
+  `cor:c49-residue-pair`. Verified both are zero-`\ref`; the live, referenced-twice
+  `cor:pe-residue-pair` (capstone.tex:1833) left untouched. Mirrored.
+- **Fix 6 (APPLIED)** — README Layout: added a contributor note stating the
+  capstone↔companion mirror rule (out of any theorem-like environment; no mirror).
+- **Fix 7 (APPLIED)** — `problems/00` companion line pointer `4316–4332`→`4318–4334`
+  (verified: companion `\section{What remains}`=4318, `\end{conjecture}`=4334).
+- **Fix 5 (HELD — did not pass as specified)** — `h\ge57`→`h\ge55` in
+  `cor:c27-auto-box`. The observation is CORRECT (`\sqrt{54h-1}<h ⟺ h\ge54`; h odd ⟹
+  tight bound `h\ge55`; `h=55`: √2969≈54.49<55 ✓, `h=53` fails) — but `h\ge57` is
+  loose-yet-valid, NOT a bug, and the audit's edit touches only the corollary while
+  `h\ge57` also appears in the proof (line 1719) and `cor:c27-residue-pair` (line 1734);
+  applying just the corollary would make the statement claim more than its proof
+  justifies. Held pending a decision to do the full consistent change (all 4 sites) or
+  leave the correct-but-loose bound.
+- **Fix 1 (PENDING AUTH)** — commit LICENSE (GPL v3) + README + these fixes and push to
+  origin/main. Push is to the public remote; awaiting explicit go.
+
+**Verification (post-fix).** Build 62 pp / 0 errors / 0 undefined; `\ref{prop:Lstar}`
+resolves; transcription `mismatches=0`.
+
+**Fixes applied.** Fixes 2, 3, 4, 6, 7 (capstone.tex + companion for 2/3/4; README;
+problems/00).
+
+**Open / not done.** Fix 5 (correct-but-loose bound; full consistent change offered);
+Fix 1 commit/push (pending user authorization); the two disclosed UNVERIFIED items
+(GRH class groups, sieve constants) remain honest research limitations, not bugs.
+
+---
+
 ## 2026-07-07 — Multi-model adversarial self-containment & proof review (cold-start)
 
 **Models.** Orchestrator + deep proof tier: **Fable 5** (`claude-fable-5`) — output

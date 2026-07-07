@@ -4,7 +4,7 @@
 
 The paper's own summary of the remaining gap, quoted verbatim from
 `paper/capstone.tex` (§7 "What remains", surviving verbatim from the
-companion source at `turyn_converse.tex` lines 4316–4332):
+companion source at `turyn_converse.tex` lines 4318–4334):
 
 > Conjecture~\ref{conj:converse} is open. The hierarchy above closes every
 > self-conjugacy-blind multi-prime composite $q\le2000$, but the proof status

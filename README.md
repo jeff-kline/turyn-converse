@@ -34,6 +34,10 @@ total 3.2s
 - `paper/capstone.tex` / `paper/capstone.pdf` — the paper.
 - `paper/companion/turyn_converse.tex` — the unedited source paper this was
   assembled from, kept verbatim for transcription-checking.
+  **Contributors:** any edit to a theorem-like environment
+  (theorem/lemma/proposition/corollary/definition/remark/conjecture) in
+  `paper/capstone.tex` must be mirrored here verbatim, or
+  `code/tools/check_transcription.py` will fail.
 - `code/` — the verification/census scripts backing the paper's claims
   (see `code/README.md`).
 - `problems/` — open problems extracted from the paper and working notes,
@@ -48,4 +52,5 @@ See `AUTHORSHIP.md`.
 
 ## License
 
-TODO (owner to decide before any public push).
+This project is licensed under the GNU General Public License v3.0 — see
+[`LICENSE`](LICENSE) for the full text.

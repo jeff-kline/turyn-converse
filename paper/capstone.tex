@@ -1812,7 +1812,7 @@ the fiber parities.
 \begin{proof}
 For a character $\chi$ of conductor $p^m$ and $u$ ranging over
 $(\Z/p^e)^\times$, the sum of $\chi(p^ju)$-values is
-$\varphi(p^e)/\varphi(p^{m-j})\cdot\mu(p^{m-j})$ for $m\ge j$ and
+$\varphi(p^{e-j})/\varphi(p^{m-j})\cdot\mu(p^{m-j})$ for $m\ge j$ and
 $\varphi(p^{e-j})$ for $m\le j$: nonzero only for $m-j\le1$, giving the
 displayed evaluation.  Taking successive differences,
 $\lambda_{p^m}-\lambda_{p^{m+1}}=p^{e-m}(y_m-y_{m-1})$ for
@@ -1848,7 +1848,7 @@ $2\sqrt q\cdot p^{\,j-e}\le h$ already for small $h$.  The construction
 $z_p=\dots=z_{p^e}$ satisfies all adjacent congruences.
 \end{proof}
 
-\begin{corollary}[$C_{49}$ full-unit nested criterion]\label{prop:c49-nested}
+\begin{corollary}[$C_{49}$ full-unit nested criterion]\label{cor:c49-nested}
 For $(p,e)=(7,2)$: with $q=98h-1$ and full-unit image at $t'=49$, the
 marginal is solvable iff there are $z_1,z_7,z_{49}$ of norm $q$ with
 $z_1\equiv z_7\pmod{49}$, $z_1\equiv z_{49}\pmod7$, the orientation
@@ -1860,7 +1860,6 @@ $z_1\in G_{eo}(q)$, $z_7,z_{49}\in G_{oe}(q)$, and boxed inverse
 \]
 The residue-pair collapse (Corollary~\ref{cor:pe-residue-pair}) holds
 with modulus $49$ and automatic boxes for $h\ge101$.
-\label{cor:c49-residue-pair}
 \end{corollary}
 
 The $(7,2)$ instance closes the two remaining prime-power secondary
@@ -4608,7 +4607,7 @@ gives $|\sigma|^2=q$ with $\sigma\in\Z[i]$.
 For $q\equiv1\pmod8$ one has $\chi(-1)=1$, so $\rho\in2\Z[i]$; numerically more
 holds, and the basic $2$-adic divisibility is elementary.
 
-\begin{proposition}[The quartic $2$-adic refinement]\label{conj:Lstar}
+\begin{proposition}[The quartic $2$-adic refinement]\label{prop:Lstar}
 For $m=4$ and $q\equiv1\pmod8$, $\rho\equiv0\pmod{(1+i)^3}$ in $\Z[i]$. Hence
 $8$ divides $|\rho|^2$, and~\eqref{eq:twonorm} decomposes $q$ as a sum of two
 Gaussian norms with the first norm divisible by $8$.
@@ -4682,7 +4681,7 @@ characters, no pair); negaperiodic Golay pairs~\cite{BD15} are binary of even
 length; the quaternary Legendre pairs~\cite{JP24,KKW24} live on the affine side.
 Every clause of Theorems~\ref{thm:normalform}--\ref{thm:dichotomy},
 Corollary~\ref{cor:turyn2}, and Propositions~\ref{prop:twosquaresm4}
-and~\ref{conj:Lstar} have been
+and~\ref{prop:Lstar} have been
 verified entry by entry, in exact arithmetic, for $59$ pairs $(q,m)$ with $q$
 prime up to $113$ and $m\mid q-1$, $m\le12$ (zero failures), and
 Remark~\ref{rem:quat} likewise.
