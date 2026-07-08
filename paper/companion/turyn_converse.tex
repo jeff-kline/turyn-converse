@@ -551,18 +551,22 @@ $\tau_g$; but $|\tau_g|^2\in\{1,2\}$ while $\ell^k\ge9$, a contradiction.
 \end{proof}
 
 This closes $q=45$ ($t=23$, $\ord_{23}(3)=11$ odd), the first composite case
-beyond two squares, and $13$ further $q\le2000$.
+beyond two squares, and $12$ further $q\le2000$.
 
 \begin{remark}[The blind spot]\label{rem:blindspot}
 Both Propositions~\ref{prop:twosquares} and~\ref{prop:selfconj} require a prime
-divisor $\ell\equiv3\pmod4$ in a suitable position. Every composite $q$ all of
-whose prime divisors are $\equiv1\pmod4$ is therefore invisible to the entire
-self-conjugacy class---e.g.\ $q=65=5\cdot13$ ($t=33$), for which no inert prime
-appears in any $\Q(\zeta_{4d})$ layer. There are $111$ such composite $q\le2000$;
-they are the domain of Sections~\ref{sec:t3-decision}--\ref{sec:defect}. (Exact
-quotient descent nonetheless closes $q=65$ via $\Z[C_{33}]\to\Z[C_{11}]$; the
-T3 and quotient mechanisms developed next attack this same blind spot by
-different means.)
+divisor $\ell\equiv3\pmod4$ in a suitable position---an odd power for the
+two-squares obstruction, an order-parity condition for self-conjugacy. A
+composite $q$ survives both exactly when every $\ell\equiv3\pmod4$ dividing it
+occurs to an even power and the self-conjugacy test does not fire. The simplest
+such orders have all prime divisors $\equiv1\pmod4$---e.g.\ $q=65=5\cdot13$
+($t=33$), for which no inert prime appears in any $\Q(\zeta_{4d})$ layer---but
+the blind spot is larger: of the $111$ surviving composite $q\le2000$, $80$ are
+all-$\equiv1\pmod4$ and $31$ carry a $\equiv3\pmod4$ prime to an even power
+(e.g.\ $q=245=5\cdot7^2$). These $111$ orders are the domain of
+Sections~\ref{sec:t3-decision}--\ref{sec:defect}. (Exact quotient descent
+nonetheless closes $q=65$ via $\Z[C_{33}]\to\Z[C_{11}]$; the T3 and quotient
+mechanisms developed next attack this same blind spot by different means.)
 \end{remark}
 
 \subsection{The composite-multiplier reduced decision}\label{sec:t3-decision}

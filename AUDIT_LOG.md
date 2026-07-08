@@ -18,6 +18,75 @@ Each audit is expected to append an entry; do not rewrite past entries.
 
 ---
 
+## 2026-07-07 — Code-correctness validation (clean-room cross-check); F1/F2 prose fixes applied
+
+**Models.** Sonnet 5 orchestrator (dispatch, code-quality read, merge); Haiku 4.5
+Tier-M (ran shipped functions on samples, dumped raw output); **three fresh parallel
+Opus 4.8** (`claude-opus-4-8`, high effort) clean-room instances, each writing
+independent group/number-theory code from `capstone.tex`'s definitions before touching
+the shipped scripts; Fable reserved, not fired (no contested mismatch). Mainline
+verification of the findings + application of F1/F2: **Opus 4.8**. The agent's full
+draft was reviewed by the mainline and its findings independently confirmed.
+
+**Scope.** Not a proof audit — does the shipped `code/*.py` actually COMPUTE what the
+paper claims (guarding against a self-consistent bug that emits paper-matching numbers)?
+Method: clean-room reimplementation of each load-bearing computation from `capstone.tex`'s
+definitions, cross-checked against shipped output on small tractable samples. Critical
+coverage: T1 multiplier group (`v_group`/`orbits`), T2 classical obstructions
+(`two_squares_fail`/`selfconj_kill`), T3 closure branch classifier (`candidates`/
+`best_signature`/`existential_divisor_report`), T4 semiprime census/w-formula. T5
+(`small_image_fe_tower.py`) is **not in this repo** (confirmed absent) — out of scope by
+non-existence.
+
+**Findings.**
+- **No code-correctness defect** in any audited function. All clean-room cross-checks
+  MATCH: T1 (~14 samples incl. full partitions for 65/45/185/441), T2 (all 352 composite
+  q≤2000, 211/13/111 partition), T3 (34 divisor-lattice rows + 7 two-orbit firing
+  decisions for q=549/425/1445/1469/1937/1325), T4 (5 w-values + a full census(2000)
+  tally, 8/8 members). This closes the previously-unaudited gap of the scripts'
+  *internal* correctness (prior audits checked reproducibility + proofs, not clean-room
+  code equivalence).
+- **F1 (paper prose, `rem:blindspot`) — CONFIRMED, FIXED.** The 111-member blind-spot
+  count is correct, but the prose characterized it as "every composite q all of whose
+  prime divisors ≡1 mod4," which holds for only **80** of the 111; the other **31**
+  (e.g. q=245=5·7², 441=3²·7², 549=3²·61) carry a ≡3-mod-4 prime at even power. Mainline
+  independently reproduced 80/31/111 via the shipped classifier. **Fixed**: rewrote
+  `rem:blindspot` to state the correct characterization (every ≡3-mod-4 prime at even
+  power + survives self-conjugacy) and the 80+31 split; mirrored to companion.
+- **F2 (paper prose, capstone.tex:506) — CONFIRMED, FIXED.** "closes q=45 … and 13
+  further" implied 14 self-conjugacy kills; the true count is **13**
+  (`[45,117,261,333,477,765,833,981,1125,1225,1573,1773,1845]`), i.e. 45 + **12** further.
+  **Fixed**: "13 further" → "12 further"; mirrored.
+- **F3 (cosmetic) — CONFIRMED, not applied.** "Composite" is used two ways: `sweep()`
+  counts Ω≥2 (352, incl. prime powers); `blind_spot_qs` requires ≥2 *distinct* primes
+  (335). Both correct for their purpose. [Mainline hit this directly: a first pass using
+  Ω≥2 gave 128/88/40, reconciling to 111/80/31 only under ≥2-distinct-primes — the correct
+  in-scope definition, since prime powers are exactly where the converse *permits* pairs.]
+  Code-readability only; no paper change.
+- **F4 (cosmetic, code quality).** `candidates(q, proper=True)` for a single q triggers,
+  via a lazily-built module-scoped cache in `marginal_orbit_algebra.py`, expensive
+  period-lattice computation over unrelated q — undocumented on the docstring;
+  deterministic and self-consistent, not a bug. Optional doc note.
+- **Code-quality (Sonnet).** Scripts concise, deterministic, budget-guarded;
+  `density_semiprime_census.py` embeds the paper's lemma as runtime `assert`s
+  (self-checking). `orbit_signature_scan.py`'s `family()` shape-ranking bucket names are
+  code-internal, not theorem branches — correctly disclaimed by the paper
+  (`rem:selection-open`).
+
+**Verification (post-fix).** Build 62 pp / 0 errors / 0 undefined; transcription
+`mismatches=0` (F1 in the checked remark mirrored correctly).
+
+**Fixes applied.** F1 (`rem:blindspot` characterization + 80/31 split), F2 ("12 further")
+— capstone.tex + companion. F3/F4 code-quality notes not applied (optional).
+
+**Residual doubt / not covered.** Small/tractable samples only (headline q≤2000/10⁷ counts
+were cross-check targets, not re-derived at full scale). The `family()`/`best_signature()`
+shape-ranking heuristic was out of scope (paper disclaims it as non-theorem-derived).
+Deeper per-family certificates (h=3 hierarchy, C21/C27/C49/C57 joins, full-torus row-sum)
+were covered by the prior Fable pass, not re-audited here. T5 not in repo.
+
+---
+
 ## 2026-07-07 — Public-readiness & full-coverage review (Sonnet-orchestrated); fixes applied
 
 **Models.** Sonnet 5 orchestrator; Haiku 4.5 mechanical; Opus 4.8 (high) deep
