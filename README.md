@@ -50,6 +50,26 @@ total 3.2s
 
 See `AUTHORSHIP.md`.
 
+## How to cite
+
+If you reference this work, please cite the repository:
+
+```bibtex
+@misc{kline2026turyn,
+  author       = {Kline, Jeffery},
+  title        = {{Toward a converse of Turyn's theorem: obstructions to Turyn pairs at composite orders}},
+  year         = {2026},
+  howpublished = {\url{https://github.com/jeff-kline/turyn-converse}},
+  note         = {GitHub repository; written by large language models under human direction}
+}
+```
+
+Plain text: Jeffery Kline, *Toward a converse of Turyn's theorem: obstructions to
+Turyn pairs at composite orders*, 2026. https://github.com/jeff-kline/turyn-converse
+
+For a reproducible reference, pin a specific commit hash or a tagged release in the
+`note` field.
+
 ## License
 
 This project is licensed under the GNU General Public License v3.0 — see
