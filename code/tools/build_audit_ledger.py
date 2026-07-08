@@ -187,10 +187,15 @@ def main() -> int:
     if VERDICTS.exists():
         verdicts = json.loads(VERDICTS.read_text())
 
+    def vkey(number: str, label: str) -> str:
+        # verdicts are keyed by label; the 2 unlabeled environments fall back
+        # to a stable number key so they are still checkpointable.
+        return label if label else f"num:{number}"
+
     n = len(rows)
     covered = sum(1 for _, _, label, _ in rows if label in PRIOR)
     with_verdict = sum(
-        1 for _, _, label, _ in rows if label and verdicts.get(label, {}).get("verdict")
+        1 for number, _, label, _ in rows if verdicts.get(vkey(number, label), {}).get("verdict")
     )
 
     lines = []
@@ -232,7 +237,7 @@ def main() -> int:
         lab = f"`{label}`" if label else "*(unlabeled)*"
         ttl = title if title else "—"
         prior = PRIOR.get(label, "aggregate-only")
-        v = verdicts.get(label, {}) if label else {}
+        v = verdicts.get(vkey(number, label), {})
         verdict = v.get("verdict", "— pending")
         note = v.get("note", "")
         vcell = verdict if not note else f"{verdict} — {note}"
