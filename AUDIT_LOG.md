@@ -18,6 +18,64 @@ Each audit is expected to append an entry; do not rewrite past entries.
 
 ---
 
+## 2026-07-07 — Privacy audit (2nd pass, independent); no fixes needed
+
+**Models.** Haiku 4.5 (low effort) mechanical grep/list/tabulate pass; escalated to
+Sonnet 5 for report synthesis. No deep-reasoning model needed — task was regex + git
+plumbing, not judgment calls beyond one borderline severity call (repo owner's own
+commit email).
+
+**Scope.** Independent re-derivation (not a rely-on-prior-pass check) of exposed
+private/sensitive data in this **public** repo, across two co-equal scopes: (1) the
+working tree at HEAD, and (2) the entire git history — every ref/commit, plus anything
+added-then-removed. Read-only: no edits, no `git rm`/`filter-repo`/rebase/force-push.
+
+**Method.** Working tree: `git grep` for local paths/usernames, emails (excl. noreply),
+secret/credential patterns (API keys, PEM blocks, OAuth/Slack tokens, password/secret
+literals), and internal/private references (localhost, RFC1918 IPs, `.env`); PDF
+metadata + `strings` inspection of `paper/capstone.pdf`. History: enumerated all
+refs/branches/tags/remote (5 commits, single branch `main`, no tags); dumped
+author/committer identities; grepped commit messages and full `git log --all -p`
+content; checked added-then-deleted files; ranked all blobs by size for orphaned/large
+objects; ran `git fsck --full --unreachable --dangling`. Cross-checked PDF metadata
+across all 3 historical blob versions of `capstone.pdf`, not just HEAD. `gitleaks`/
+`trufflehog` were not installed; relied on manual regex only.
+
+**Findings.**
+- **No secrets, no unintended local-path leakage into tracked content, no
+  scrubbed-but-recoverable files, no dangling/orphaned objects.** History has zero
+  added-then-deleted files (every file ever added is still present at HEAD); `git fsck`
+  returned nothing; all blobs correspond to expected repo content at reasonable sizes.
+- **Info/Low — real commit email.** All 5 commits' author/committer identity is
+  `Jeff Kline <jeffery.kline@gmail.com>` (repo owner's real name + personal Gmail),
+  present in every commit in history. Judged intentional/expected (matches the
+  GitHub-linked identity), not a leak — flagged per protocol, not actionable without a
+  human decision to scrub it retroactively.
+- **Info — Claude co-author trailers.** 4 commits carry
+  `Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>` / `Claude Sonnet 5
+  <noreply@anthropic.com>` — noreply address, expected Claude Code convention, no action.
+- **N/A — not public.** `paper/capstone.log` (LaTeX build log) contains local
+  `/Users/<user>/.texlive2021/...` paths, but the file is untracked and excluded by
+  `.gitignore` (`*.log`); confirmed via `git ls-files` it was never committed. No action
+  beyond not force-adding it.
+- **Clean — PDF metadata.** All 3 historical blob versions of `paper/capstone.pdf`
+  (not just HEAD) have empty Author field and only generic `pdfTeX`/`LaTeX with hyperref`
+  Producer/Creator strings; no embedded `/Users/` or username strings in any version.
+- False positives noted and dismissed: "password" match was GPL license boilerplate
+  (`LICENSE:340`); "internal"/IP-like matches were English prose and an arXiv ID
+  (`1410.3333`), not RFC1918 addresses or hostnames.
+
+**Fixes applied.** None — read-only audit, no findings required a working-tree change.
+
+**Open / not done.** Whether to retroactively scrub the repo owner's personal email from
+commit history (history-rewrite via `git filter-repo` + force-push) is a human decision,
+deferred — the address is already tied to the public GitHub identity, so scrubbing would
+be largely cosmetic. `gitleaks`/`trufflehog` were unavailable in this environment; a
+follow-up pass with those tools installed would strengthen secret-detection coverage
+beyond manual regex.
+
+---
+
 ## 2026-07-07 — Code-correctness validation (clean-room cross-check); F1/F2 prose fixes applied
 
 **Models.** Sonnet 5 orchestrator (dispatch, code-quality read, merge); Haiku 4.5

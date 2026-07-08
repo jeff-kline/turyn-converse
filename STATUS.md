@@ -48,7 +48,7 @@ attributed.
 
 ## Provenance
 
-This document was written by large language models (Claude) under human
+This document was written by large language models (primarily Claude, with some work by OpenAI's Codex GPT-5.5) under human
 direction, with machine-verified audits for the finite claims and
 independent-session cross-verification for the theoretical ones; one
 conditional theorem announced during development (a conditional infinite
