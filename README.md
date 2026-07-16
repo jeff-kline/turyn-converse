@@ -14,6 +14,41 @@ theorems at q=6ℓ−1 with an explicitly-hypothesized density program.
 `paper/capstone.pdf` — the paper. `STATUS.md` — every principal claim with
 its verification tier. `problems/` — open problems, stated to be worked on.
 
+## How to use this repository
+
+This repository was written with substantial assistance from large language
+models and is designed, in part, for other language models to ingest. The
+intended workflow is:
+
+1. Give an AI agent access to the repository.
+2. Ask it to trace definitions, proofs, computations, and dependencies across
+   the paper, its proofs, the code, and the audit records.
+3. Interrogate its answers as a human reader—request derivations, file
+   references, counterexamples, assumptions, and supporting evidence.
+
+The paper's proofs occupy a space somewhere between prose and source code:
+the theorem-like environments in `paper/capstone.tex` are structured
+precisely enough for an agent to navigate and analyze, while remaining
+readable by humans. They should not be treated as an automatic guarantee of
+correctness; the repository includes audit records (`AUDIT_LEDGER.md`,
+`AUDIT_LOG.md`, `STATUS.md`) and reproducibility checks so that claims can be
+examined rather than merely accepted.
+
+### Ask your agent
+
+Point your agent to this repository and try questions such as:
+
+- What are the main results, and which are proved, cited, conjectural, or
+  numerically corroborated?
+- What is the dependency chain for a particular theorem?
+- Where does the proof use the prime number theorem or the Riemann hypothesis?
+- Do the paper and its proofs state the same hypotheses and conclusions?
+- Which scripts test this claim, and what do those tests actually establish?
+- What are the strongest unresolved limitations or publication risks?
+
+For important conclusions, ask the agent to cite exact files, theorem labels,
+and line numbers—and verify the answer against the underlying source.
+
 ## Verify something in 60 seconds
 
 ```
