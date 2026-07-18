@@ -105,6 +105,23 @@ Turyn pairs at composite orders*, 2026. https://github.com/jeff-kline/turyn-conv
 For a reproducible reference, pin a specific commit hash or a tagged release in the
 `note` field.
 
+The converse conjecture this repository works toward originates in the closing
+remark of R. J. Turyn, *An infinite class of Williamson matrices*, J. Combin.
+Theory Ser. A **12** (1972), 319–321, which states that the methods of Turyn's
+1968 paper show, "in certain cases," that no analogue of the pair exists when
+$q$ is not a prime power, and that "it seems likely this is true in general."
+
+```bibtex
+@article{turyn1972williamson,
+  author  = {Turyn, R. J.},
+  title   = {An infinite class of {W}illiamson matrices},
+  journal = {Journal of Combinatorial Theory, Series A},
+  volume  = {12},
+  pages   = {319--321},
+  year    = {1972}
+}
+```
+
 ## License
 
 This project is licensed under the GNU General Public License v3.0 — see
